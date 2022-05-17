@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class RecipeCard extends StatelessWidget{
+class RecipeCard extends StatelessWidget {
   final String title;
   final String rating;
   final String cookTime;
@@ -12,9 +11,8 @@ class RecipeCard extends StatelessWidget{
     @required this.rating,
     @required this.thumbnailUrl,
   });
-
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 22, vertical: 10),
       width: MediaQuery.of(context).size.width,
@@ -50,7 +48,7 @@ class RecipeCard extends StatelessWidget{
               child: Text(
                 title,
                 style: TextStyle(
-                  fontSize: 19.0,
+                  fontSize: 19,
                 ),
                 overflow: TextOverflow.ellipsis,
                 maxLines: 2,
@@ -100,7 +98,7 @@ class RecipeCard extends StatelessWidget{
                       Text(cookTime),
                     ],
                   ),
-                ),
+                )
               ],
             ),
             alignment: Alignment.bottomLeft,
